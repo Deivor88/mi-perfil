@@ -1,62 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Alvarez | perfil</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Alvarez | Perfil</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 </head>
-<body>
-    <h1>David Alvarez</h1>
-    <img src="img/foto-perfil.png" alt="Foto de Perfil" width="120" height="120">
-    <p>Soy <strong>David Alvarez</strong>, un desarrollador web apasionado por crear experiencias digitales atractivas y funcionales. Me especializo en el desarrollo front-end y back-end, utilizando tecnologías modernas para construir sitios web y aplicaciones web de alta calidad.</p>
-    
-    <h2>Habilidades</h2> 
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React, Angular, Vue.js</li>
-        <li>Node.js, Express.js</li>
-        <li>Base de datos SQL y NoSQL</li>
-        <li>Diseño responsivo y accesibilidad web</li>
-    </ul>
+<body class="bg-sky-50 text-slate-700 antialiased">
 
-    <h2>Mi ruta de aprendizaje</h2>
-    <ol>
-        <li>Aprender los fundamentos de HTML, CSS y JavaScript.</li>
-        <li>Explorar frameworks y bibliotecas modernas como React y Angular.</li>
-        <li>Desarrollar proyectos prácticos para mejorar mis habilidades.</li>
-        <li>Aprender sobre bases de datos y cómo integrarlas en aplicaciones web.</li>
-        <li>Continuar aprendiendo y adaptándome a nuevas tecnologías en el desarrollo web.</li>
-    </ol>   
+  <!-- Encabezado -->
+  <header class="bg-blue-900">
+    <div class="mx-auto flex max-w-3xl flex-col items-start gap-6 px-6 py-14 sm:flex-row sm:items-center sm:py-20">
+      <img src="img/foto_perfil.png" alt="Ilustración de perfil de David" width="120"
+           class="h-32 w-32 shrink-0 rounded-full bg-blue-700 object-cover ring-4 ring-sky-300">
+      <div>
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">David Alvarez</h1>
+        <p class="mt-3 text-lg text-blue-100">
+          Soy <strong class="font-semibold text-sky-300">coder</strong> de desarrollo de software en formación.
+        </p>
+      </div>
+    </div>
+  </header>
 
-    <h2>Mi horario de estudio</h2>
-    <table border="1">
-        <thead>
+  <main class="mx-auto max-w-3xl px-6 py-12">
+
+    <!-- Habilidades -->
+    <section>
+      <h2 class="border-l-4 border-blue-600 pl-3 text-2xl font-semibold text-blue-900">Habilidades</h2>
+      <ul class="mt-5 list-disc space-y-2 pl-8 marker:text-blue-600">
+        <li>Estructura de páginas con HTML</li>
+        <li>Control de versiones con Git y GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Ruta de aprendizaje -->
+    <section class="mt-12">
+      <h2 class="border-l-4 border-blue-600 pl-3 text-2xl font-semibold text-blue-900">Mi ruta de aprendizaje</h2>
+      <ol class="mt-5 list-decimal space-y-2 pl-8 marker:font-semibold marker:text-blue-600">
+        <li>HTML y CSS</li>
+        <li>JavaScript</li>
+        <li>Backend y bases de datos</li>
+      </ol>
+    </section>
+
+    <!-- Horario -->
+    <section class="mt-12">
+      <h2 class="border-l-4 border-blue-600 pl-3 text-2xl font-semibold text-blue-900">Mi horario de estudio</h2>
+      <div class="mt-5 overflow-x-auto rounded-lg border border-blue-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-blue-700 text-white">
             <tr>
-                <th>Día</th>
-                <th>Tema</th>
-                <th>Horas</th>
+              <th class="px-4 py-3 font-semibold">Día</th>
+              <th class="px-4 py-3 font-semibold">Tema</th>
+              <th class="px-4 py-3 font-semibold">Horario</th>
             </tr>
-        </thead>
-        <tbody>
-            <tr> 
-                <td>Lunes</td>
-                <td>HTML y CSS</td>
-                <td>2 horas</td>
-            </tr>
-            <tr>
-                <td>Miercoles</td>
-                <td>JavaScript</td>
-                <td>3 horas</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Contacto</h2>
-    <p>Puedes contactarme a través de mi correo electrónico: 
-        <a href="mailto:davidalvarezangarita@gmail.com">Escribeme</a>
-    </p>
-     <p>Puedes contactarme a través de mi GitHub:
-        <a href="https://github.com/Deivor88/">Visitar perfil</a>
-    </p>
+          </thead>
+          <tbody class="divide-y divide-blue-100">
+            <tr class="even:bg-sky-50"><td class="px-4 py-3">Lunes</td><td class="px-4 py-3">HTML</td><td class="px-4 py-3">6 am a 2 pm</td></tr>
+            <tr class="even:bg-sky-50"><td class="px-4 py-3">Martes</td><td class="px-4 py-3">IA</td><td class="px-4 py-3">6 am a 2 pm</td></tr>
+            <tr class="even:bg-sky-50"><td class="px-4 py-3">Miércoles</td><td class="px-4 py-3">CSS</td><td class="px-4 py-3">6 am a 2 pm</td></tr>
+            <tr class="even:bg-sky-50"><td class="px-4 py-3">Jueves</td><td class="px-4 py-3">Algoritmia</td><td class="px-4 py-3">6 am a 2 pm</td></tr>
+            <tr class="even:bg-sky-50"><td class="px-4 py-3">Viernes</td><td class="px-4 py-3">Bases de Datos</td><td class="px-4 py-3">6 am a 2 pm</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contacto -->
+  <footer class="bg-blue-950">
+    <div class="mx-auto max-w-3xl px-6 py-12">
+      <h2 class="text-2xl font-semibold text-white">Contacto</h2>
+      <p class="mt-5 flex flex-wrap gap-3">
+        <a href="https://github.com/Deivor88" target="_blank" rel="noopener noreferrer"
+           class="rounded-md bg-sky-400 px-5 py-2.5 font-semibold text-blue-950 hover:bg-sky-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-950">
+          Mi GitHub
+        </a>
+        <a href="mailto:davidalvarezangarita@gmail.com"
+           class="rounded-md border border-sky-400 px-5 py-2.5 font-semibold text-sky-300 hover:bg-blue-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-950">
+          Escríbeme
+        </a>
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
