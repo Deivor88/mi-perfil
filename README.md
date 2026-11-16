@@ -1,6 +1,6 @@
 # Perfil de David Alvarez
 
-Página web personal que presenta el perfil de David Alvarez como coder en formación en desarrollo de software. Incluye sus habilidades, ruta de aprendizaje, horario de estudio y enlaces de contacto.
+Página web personal que presenta mi perfil como coder en formación en desarrollo de software. Incluye mis habilidades, ruta de aprendizaje, horario de estudio y enlaces de contacto.
 
 ## Tecnologías
 
